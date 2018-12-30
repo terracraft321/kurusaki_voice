@@ -34,7 +34,7 @@ def get_prefix(bot, msg):
     # Notice how you can use spaces in prefixes. Try to keep them simple though.
     prefixes = ['a.', 's.', '-']
 
-    me=['nep.','k.','saki.','a.','s.']
+    me=['nep.','k.','saki.','a.','s.','-']
 
     if msg.author.id == '189043475734331393':
         return commands.when_mentioned_or(*me)(bot, msg)
