@@ -336,5 +336,5 @@ async def volume(con,vol:float):
 #         except Exception as error:
 #             print("Unable to load extension {} error {}".format(extension, error))
 
-
+client.User.setGame('Saving The World');
 bot.run('NTI4OTU5NTc0NDQzNTU2ODY2.Dwp3mw.qYEO3P1v98lIL5AtokCVfm1B9zg') #do not post your bot token publically 
