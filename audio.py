@@ -51,7 +51,7 @@ def load_opus_lib(opus_libs=OPUS_LIBS):
 opts = {
     'default_search': 'auto',
     'quiet': True
-}  # youtube_dl options
+}  # _dl options
 
 
 load_opus_lib()
@@ -174,7 +174,7 @@ async def play(con, *, url):
         if bot.is_voice_connected(con.message.server) == True:
             if player_status[con.message.server.id] == True:
                 song_names[con.message.server.id].append(url)
-                r = rq.Session().get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q={}&key=put your youtube token here'.format(url)).json()
+                r = rq.Session().get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q={}&key=AIzaSyBnw5gMikCJJS2FgCsqGPQso-O1mwtrmTg'.format(url)).json()
                 await bot.send_message(con.message.channel, "**Song `{}` Queued**".format(r['items'][0]['snippet']['title']))
 
             if player_status[con.message.server.id] == False:
@@ -315,4 +315,4 @@ async def volume(con,vol:float):
 #             print("Unable to load extension {} error {}".format(extension, error))
 
 
-bot.run('Your bot token here') #do not post your bot token publically 
+bot.run('NTI4OTU5NTc0NDQzNTU2ODY2.Dwp3mw.qYEO3P1v98lIL5AtokCVfm1B9zg') #do not post your bot token publically 
