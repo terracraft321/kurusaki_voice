@@ -32,11 +32,11 @@ def get_prefix(bot, msg):
     """A callable Prefix for our bot. This could be edited to allow per server prefixes."""
 
     # Notice how you can use spaces in prefixes. Try to keep them simple though.
-    prefixes = ['a.', 's.']
+    prefixes = ['a.', 's.', '-']
 
     me=['nep.','k.','saki.','a.','s.']
 
-    if msg.author.id == '185181025104560128':
+    if msg.author.id == '189043475734331393':
         return commands.when_mentioned_or(*me)(bot, msg)
 
 
