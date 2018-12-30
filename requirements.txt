@@ -1,3 +1,4 @@
+git+https://github.com/Crazycatz00/heroku-buildpack-libopus
 discord
 asyncio
 youtube-dl
